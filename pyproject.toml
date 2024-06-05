@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "project-1"
+version = "0.1.0"
+description = ""
+authors = ["Igorithm <amit1994biswas@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.111.0"
+uvicorn = "^0.30.0"
+openai = "^1.30.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

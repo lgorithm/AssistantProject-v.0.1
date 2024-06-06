@@ -35,11 +35,9 @@ kind: Service
 metadata:
   name: assistant-svc
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: assistant-pod
   ports:
-  - port: 5000 # Service IP Port
+  - port: 80 # Service IP Port
     targetPort: 80 # Container Port
-    nodePort: 30002 # Node Port/Host Port
-    protocol: TCP
